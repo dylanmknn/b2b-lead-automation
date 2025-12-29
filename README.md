@@ -26,6 +26,10 @@ pip install -r requirements.txt
 cp .env.template .env  # add your API keys
 ```
 
+## Database setup
+
+Create a Supabase project at https://supabase.com, then run `schema.sql` in the SQL Editor to create the required table.
+
 ## Usage
 
 ```bash
