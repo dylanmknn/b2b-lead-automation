@@ -1,0 +1,49 @@
+# Git
+.git
+.gitignore
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+.pytest_cache
+.coverage
+htmlcov
+*.egg-info
+dist
+build
+
+# Virtual environments
+venv
+env
+ENV
+.venv
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Documentation (not needed in container)
+*.md
+!README.md
+
+# Tests (if any)
+tests
+test_*
