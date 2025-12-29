@@ -43,7 +43,21 @@ python src/millemail_pipeline.py --count 50
 python src/send_millemail_to_smartlead.py
 ```
 
-## Docker
+## Running with Docker
+
+```bash
+docker pull dylanmknn/b2b-lead-automation:latest
+docker run --env-file .env dylanmknn/b2b-lead-automation:latest
+```
+
+Environment variables required (see .env.template):
+- APIFY_API_KEY
+- ANTHROPIC_API_KEY
+- HUNTER_API_KEY
+- SUPABASE_URL
+- SUPABASE_KEY
+
+Or build locally:
 
 ```bash
 docker build -t b2b-lead-automation .
