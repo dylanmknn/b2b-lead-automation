@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    image: dylanmknn/b2b-lead-automation:latest
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+    command: ["--count", "50"]
